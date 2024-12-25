@@ -101,16 +101,19 @@ nav a:hover::after {
 .card-2 {
     display: flex;
     align-items: center; /* Centers the items vertically */
+    margin-bottom: 15px;
+  }
+  .professor-name {
+    margin-left: 0px;
   }
   
   .staff-img {
-    margin-top: 15px;
     margin-left: 10px;
     height: 50px;
-    width: 50px; /* Adjust the size of the image as needed */
+    width: 50px; 
     margin-right: 10px; /* Adds space between the image and text */
   }
   
-  .staff-text {
-    margin: 0; /* Remove extra margin for better alignment */
+  .professor-name {
+    color: rgb(0, 89, 255);
   }
