@@ -141,6 +141,12 @@ nav a:hover::after {
   border: 1px solid gray;
   border-radius: 4px;
 }
+.course-container:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
+} 
 .professor-name {
   color: rgb(0, 89, 255);
 }
@@ -166,11 +172,11 @@ nav a:hover::after {
   background-color: #f2f2f2;
   cursor: pointer;
   transform: scale(1.03);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .item img {
   width: 100%;
-  height: auto;
+  height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }

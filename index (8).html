@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            display: block;
+            margin: auto;
+        }
+        .cover {
+            width: 50%;
+            box-shadow: 0px 0px 5px black;
+            padding: 10px;
+            height: 400px;
+        }
+        .head {
+            font-size: 4vw;
+            color: white;
+            background-color: aqua;
+            padding: 10px;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .text {
+            width: 70px;
+            text-align: right;
+            color: blue;
+            padding: 10px;
+        }
+        .p10 {
+            padding: 10px;
+        }
+        .m5 {
+            margin: 5px;
+        }
+        .btn {
+            font-size: 14px;
+            background-color: aqua;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover center">
+        <h1 class="head">JavaScript Condition</h1>
+        <form>
+            <div class="p10 m5">
+                <span class="text">Score:</span>
+                <input type="number" id="num1">
+                <button id="btntest" type="button" class="btn" onclick="getResult(); getGrade();">Test</button>
+            </div>
+            <div class="p10 m5">
+                <span class="text">Result:</span>
+                <input type="text" id="result" readonly>
+            </div>
+            <div class="p10 m5">
+                <span class="text">Grade:</span>
+                <input type="text" id="grade" readonly>
+            </div>
+        </form>
+    </div>
+    <script>
+        const getResult = function() {
+            var score = parseInt(document.getElementById("num1").value);
+            var result = document.getElementById("result");
+            if (score >= 80) {
+                result.value = "Excellent";
+            } else if (score >= 70) {
+                result.value = "Good";
+            } else if (score >= 60) {
+                result.value = "Satisfactory";
+            } else {
+                result.value = "Failed";
+            }
+        };
+
+        const getGrade = function() {
+            var score = parseInt(document.getElementById("num1").value);
+            var grade = document.getElementById("grade");
+            if (score >= 80) {
+                grade.value = "A";
+            } else if (score >= 70) {
+                grade.value = "B";
+            } else if (score >= 60) {
+                grade.value = "C";
+            } else {
+                grade.value = "F";
+            }
+        };
+    </script>
+</body>
+</html>
